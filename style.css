@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'Norse-Bold';
+    src: url(Fonts/Norse-Bold.otf);
+}
+
+.formBody{
+    --margin-spacing: 50px;  
+    --font-size: 20px;
+}
+
+.formBody>p{
+    margin: var(--margin-spacing);
+    font-size: var(--font-size);
+}
+
+input:invalid{
+    border-color: red solid 5px;
+}
+
+.container{
+    display:flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.backgroundImage{
+    flex: 1 1 0; 
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.backgroundImage img{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.backgroundImage img.logo{
+    position: absolute; 
+    top: 10em;
+    left: 5em;
+    width: 10em;
+    height: 12em;
+}
+
+.backgroundImage spam{
+    position: absolute; 
+    top: 12rem;
+    left: 15rem;
+    font-size: 150px;
+    color: white;
+    font-family: 'Norse-Bold';
+}
+
+.formBody{
+    background-color: aquamarine;
+    display: flex;
+    flex: 2 1 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.submitBtn{
+    display: flex;
+    justify-content: center;
+}
+
+
+form  { display: table; border-collapse:separate;border-spacing:var(--margin-spacing)}
+p { display: table-row;}
+label { display: table-cell; font-size: var(--font-size)}
+input { display: table-cell; font-size: var(--font-size)}
